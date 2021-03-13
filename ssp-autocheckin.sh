@@ -140,7 +140,7 @@ if [ "${users_array}" ]; then
     if [ "${TELEGRAMBOT_TOKEN}" ] && [ "${TELEGRAMBOT_CHATID}" ]; then
         result_tgbot_log_text="${TITLE}${log_text}"
         echo -e "chat_id=${TELEGRAMBOT_CHATID}&parse_mode=Markdown&text=${result_tgbot_log_text}" >${PUSH_TMP_PATH}
-        push=$(curl -k -s --data-binary @${PUSH_TMP_PATH} "https://api.telegram.org/bot${TELEGRAMBOT_TOKEN}/sendMessage")
+        push=$(curl -k -s --data-binary @${PUSH_TMP_PATH} "https://api.telegram.org/bot$TELEGRAMBOT_TOKEN/sendMessage")
         push_code=$(echo ${push} | grep -o '"ok":true')
         if [ ${push_code} ]; then
             echo -e "【TelegramBot 推送结果】: 成功\n"
