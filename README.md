@@ -2,7 +2,7 @@
 
 ![SSPanel_Auto_Checkin](https://github.com/isecret/sspanel-autocheckin/workflows/SSPanel_Auto_Checkin/badge.svg)
 
-## 升级警告1
+## 升级警告
 
 V2.0 版本支持多站点多用户签到，不兼容 V1.0 版本配置，升级脚本后需要重新配置
 
