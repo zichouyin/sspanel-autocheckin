@@ -209,4 +209,4 @@ SSPanel Auto Checkin v2.0.0 签到通知
 
 当然也可以立即手动触发同步：`https://pull.git.ci/process/${owner}/${repo}`
 
-1
+
